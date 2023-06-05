@@ -29,6 +29,10 @@ class NotesController {
       }
     });
 
+    if (rating < 0 || rating > 5) {
+      throw new AppError("A nota deve ser entre 0 e 5.");
+    }
+
     await knex("tags").insert(tagsInsert);
 
     return response.json();
@@ -78,6 +82,7 @@ class NotesController {
         .whereLike("notes.title",`%${title}%`)
         .whereIn("name", filterTags)
         .innerJoin("notes", "notes.id", "tags.note_id")
+        .groupBy("notes.id")
         .orderBy("notes.title")
 
     } else {
