@@ -27,7 +27,7 @@ $ npm install
 $ npm run dev 
 ```
 ## 📝 Licença
-Esse projeto está sob a licença [MIT](). Veja o arquivo LICENSE para mais detalhes.
+Esse projeto está sob a licença [MIT](https://github.com/bruno-deoliveira/rocketMovies_BackEnd_Completo/new/main). Veja o arquivo LICENSE para mais detalhes.
 
 ## 📞 Suporte
 Para suporte, mande um e-mail para brunoalmeida0805@gmail.com Grato!
